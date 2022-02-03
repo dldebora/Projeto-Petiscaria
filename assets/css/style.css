@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+
+body {
+    background-color: #1D232A;
+    color: white;
+    font-family: 'Open Sans', 'icones', sans-serif;
+}
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15191C;
+    padding: 8px 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+
+}
+.cabecalho__menu i::before{
+    content: "\e904";
+    font-size: 24px;
+}
+.cabecalho__logo{
+    width: 70px;
+}
+.cabecalho__noficacao i::before{
+    content: "\e906";
+    font-size: 24px;
+}
+.menu-lateral{
+    display: flex;
+    flex-direction: column;
+    background-color: #15191C;
+    width: 75vw;
+    height: 100vh;
+
+    position: absolute;
+    left: -100vw;
+    transition: .25s;
+}
+.menu-lateral--ativo {
+    left: 0;
+    transition: .25s;
+
+}
+.menu-lateral__logo{
+    width: 118px;
+    align-self: center;
+    padding: 16px;
+}
+.menu-lateral__link{
+    height: 64px;
+    color: #95999C;
+    padding-left: 64px;
+    display: flex;
+    align-items: center;
+
+}
+.menu-lateral__link::before{
+    content: "\e900";
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    position: absolute;
+    left: 24px;
+}
+.menu-lateral__link--ativo{
+    color: #FFFFFF;
+    padding-left: 56px;
+    border-left: 8px solid #FFFFFF;
+
+}
+.menu-lateral__link--home::before{
+    content: "\e902";
+}
+.menu-lateral__link--login::before{   
+    content: "\e903";
+}
+.menu-lateral__link--agenda::before{
+    content: "\e905";
+}
+.menu-lateral__link--cardapio::before{   
+    content: "\e901";
+}
+.menu-lateral__link--localizacao::before{
+    content: "\e90d";
+}
+.menu-lateral__link--contato::before{ 
+    content: "\e90d";  
+}
